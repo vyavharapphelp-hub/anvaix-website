@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anvaix — Intelligent Infrastructure for Business</title>
+  <meta name="description" content="We build the intelligent infrastructure your business runs on. Custom AI systems, SaaS development, automation, and computer vision solutions designed to reduce operational overhead and scale without proportional cost." />
+  <meta name="keywords" content="AI Solutions, SaaS Development, Automation, RPA, Computer Vision, Intelligent Infrastructure" />
+  <meta name="theme-color" content="#050505" />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <!-- Cursor glow -->
+  <div id="cursor-glow"></div>
+  
+  <!-- 3D Neural Nexus Background -->
+  <div id="canvas-bg"></div>
+  
+  <!-- Navigation -->
+  <nav id="main-nav" class="nav">
+    <div class="nav__container">
+      <a href="#home" class="nav__logo" data-navigate="home">
+        <span class="nav__logo-icon">◆</span>
+        <span class="nav__logo-text">ANVAIX</span>
+      </a>
+      <div class="nav__links" id="nav-links">
+        <a href="#home" class="nav__link active" data-navigate="home">Home</a>
+        <a href="#about" class="nav__link" data-navigate="about">About</a>
+        <a href="#services" class="nav__link" data-navigate="services">Services</a>
+        <a href="#ai-solutions" class="nav__link" data-navigate="ai-solutions">AI Solutions</a>
+        <a href="#saas" class="nav__link" data-navigate="saas">SaaS</a>
+        <a href="#automation" class="nav__link" data-navigate="automation">Automation</a>
+        <a href="#computer-vision" class="nav__link" data-navigate="computer-vision">Vision</a>
+        <a href="#contact" class="nav__link nav__link--cta" data-navigate="contact">Start a Conversation</a>
+      </div>
+      <button class="nav__burger" id="nav-burger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Main Content Area -->
+  <main id="app">
+    
+    <!-- ==================== PAGE 1: HOME ==================== -->
+    <section id="page-home" class="page page--active">
+      
+      <!-- Hero -->
+      <div class="hero">
+        <div class="hero__bg">
+          <div class="hero__grid"></div>
+          <div class="hero__orb hero__orb--1"></div>
+          <div class="hero__orb hero__orb--2"></div>
+          <div class="hero__orb hero__orb--3"></div>
+        </div>
+        <div class="hero__content">
+          <div class="hero__badge animate-on-scroll">
+            <span class="hero__badge-dot"></span>
+            Focused Technology Company
+          </div>
+          <h1 class="hero__title animate-on-scroll">
+            We Build the <span class="text-gradient">Intelligent Infrastructure</span> Your Business Runs On
+          </h1>
+          <p class="hero__subtitle animate-on-scroll">
+            From custom AI systems to full-scale automation — practical technology solutions designed to reduce operational overhead, eliminate bottlenecks, and help your business scale without adding proportional cost.
+          </p>
+          <div class="hero__actions animate-on-scroll">
+            <a href="#contact" class="btn btn--primary" data-navigate="contact">
+              <span>Start a Conversation</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="#services" class="btn btn--ghost" data-navigate="services">
+              <span>Explore Services</span>
+            </a>
+          </div>
+          <!-- Stats commented out for now
+          <div class="hero__stats animate-on-scroll">
+            <div class="hero__stat">
+              <span class="hero__stat-number" data-count="50">0</span><span class="hero__stat-suffix">+</span>
+              <span class="hero__stat-label">Projects Delivered</span>
+            </div>
+            <div class="hero__stat">
+              <span class="hero__stat-number" data-count="98">0</span><span class="hero__stat-suffix">%</span>
+              <span class="hero__stat-label">Client Retention</span>
+            </div>
+            <div class="hero__stat">
+              <span class="hero__stat-number" data-count="5">0</span>
+              <span class="hero__stat-label">Core Disciplines</span>
+            </div>
+          </div>
+          -->
+        </div>
+        <!-- Scroll indicator commented out — overlaps with stats
+        <div class="hero__scroll-indicator">
+          <span>Scroll to explore</span>
+          <div class="hero__scroll-line"></div>
+        </div>
+        -->
+      </div>
+
+      <!-- Introduction -->
+      <div class="section section--intro">
+        <div class="container">
+          <div class="section__header animate-on-scroll">
+            <span class="section__tag">Our Premise</span>
+            <h2 class="section__title">Technology should solve a <em>specific, real problem</em> in your business — not add complexity to it.</h2>
+          </div>
+          <div class="intro__grid animate-on-scroll">
+            <div class="intro__text">
+              <p>Most technology decisions are expensive, slow, and difficult to undo. We understand that. We partner with companies that are ready to move from manual and reactive operations to systems that are intelligent, efficient, and built to last.</p>
+              <p>We are a technology company specialising in artificial intelligence, software development, intelligent automation, and computer vision. We work across industries with teams who are serious about operational improvement and long-term capability building.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="section section--services-grid">
+        <div class="container">
+          <div class="section__header animate-on-scroll">
+            <span class="section__tag">What We Do</span>
+            <h2 class="section__title">Five Disciplines. <span class="text-gradient">One Purpose.</span></h2>
+          </div>
+          <div class="services-grid">
+            <div class="service-card animate-on-scroll" data-navigate="ai-solutions">
+              <div class="service-card__icon">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M24 4V12M24 36V44M4 24H12M36 24H44M8.93 8.93L14.59 14.59M33.41 33.41L39.07 39.07M39.07 8.93L33.41 14.59M14.59 33.41L8.93 39.07" stroke="currentColor" stroke-width="1.5"/></svg>
+              </div>
+              <h3 class="service-card__title">AI Solutions</h3>
+              <p class="service-card__desc">AI systems grounded in your specific business context — from intelligent document processing to predictive analytics and decision-support systems.</p>
+              <span class="service-card__link">Explore AI Solutions →</span>
+            </div>
+            <div class="service-card animate-on-scroll" data-navigate="saas">
+              <div class="service-card__icon">
+                <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="currentColor" stroke-width="1.5"/><line x1="6" y1="18" x2="42" y2="18" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="14" r="1.5" fill="currentColor"/><circle cx="18" cy="14" r="1.5" fill="currentColor"/><line x1="14" y1="26" x2="34" y2="26" stroke="currentColor" stroke-width="1.5"/><line x1="14" y1="32" x2="28" y2="32" stroke="currentColor" stroke-width="1.5"/></svg>
+              </div>
+              <h3 class="service-card__title">SaaS Development</h3>
+              <p class="service-card__desc">Software products that last — clean, maintainable, production-ready code with a product mindset for scale and evolution.</p>
+              <span class="service-card__link">Explore SaaS →</span>
+            </div>
+            <div class="service-card animate-on-scroll" data-navigate="automation">
+              <div class="service-card__icon">
+                <svg viewBox="0 0 48 48" fill="none"><path d="M12 24L20 32L36 16" stroke="currentColor" stroke-width="1.5"/><path d="M4 24C4 12.954 12.954 4 24 4" stroke="currentColor" stroke-width="1.5"/><path d="M44 24C44 35.046 35.046 44 24 44" stroke="currentColor" stroke-width="1.5"/><circle cx="24" cy="4" r="2" fill="currentColor"/><circle cx="24" cy="44" r="2" fill="currentColor"/></svg>
+              </div>
+              <h3 class="service-card__title">Automation & RPA</h3>
+              <p class="service-card__desc">Automation systems that handle the structured, predictable workload — so your people can focus on decisions and relationships.</p>
+              <span class="service-card__link">Explore Automation →</span>
+            </div>
+            <div class="service-card animate-on-scroll">
+              <div class="service-card__icon">
+                <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="14" width="12" height="20" rx="2" stroke="currentColor" stroke-width="1.5"/><rect x="28" y="14" width="12" height="20" rx="2" stroke="currentColor" stroke-width="1.5"/><line x1="20" y1="24" x2="28" y2="24" stroke="currentColor" stroke-width="1.5"/><circle cx="14" cy="20" r="1.5" fill="currentColor"/><circle cx="34" cy="20" r="1.5" fill="currentColor"/></svg>
+              </div>
+              <h3 class="service-card__title">Robotics</h3>
+              <p class="service-card__desc">The software layer that makes robotic hardware intelligent — integration, control, and adaptability for manufacturing and logistics.</p>
+              <span class="service-card__link">Learn More →</span>
+            </div>
+            <div class="service-card animate-on-scroll" data-navigate="computer-vision">
+              <div class="service-card__icon">
+                <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="6" stroke="currentColor" stroke-width="1.5"/><circle cx="24" cy="24" r="14" stroke="currentColor" stroke-width="1.5"/><path d="M24 10V6M24 42V38M38 24H42M6 24H10M34.14 13.86L37 11M11 37L13.86 34.14M34.14 34.14L37 37M11 11L13.86 13.86" stroke="currentColor" stroke-width="1.5"/></svg>
+              </div>
+              <h3 class="service-card__title">Computer Vision</h3>
+              <p class="service-card__desc">Visual intelligence that works reliably under real-world conditions — quality control, object detection, safety monitoring.</p>
+              <span class="service-card__link">Explore Vision →</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Preview -->
+      <div class="section section--about-preview">
+        <div class="container">
+          <div class="about-preview">
+            <div class="about-preview__content animate-on-scroll">
+              <span class="section__tag">About Us</span>
+              <h2 class="section__title">A focused technology company at the intersection of <span class="text-gradient">engineering rigour</span> and practical business thinking.</h2>
+              <p>We work with a small number of clients at any given time so that we can give each engagement the attention it deserves. Our team includes engineers, data scientists, automation architects, and product specialists who have solved these problems before.</p>
+              <a href="#about" class="btn btn--outline" data-navigate="about">Learn More About Us</a>
+            </div>
+            <div class="about-preview__visual animate-on-scroll">
+              <div class="about-visual">
+                <div class="about-visual__ring about-visual__ring--1"></div>
+                <div class="about-visual__ring about-visual__ring--2"></div>
+                <div class="about-visual__ring about-visual__ring--3"></div>
+                <div class="about-visual__center">
+                  <span>◆</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- How We Work -->
+      <div class="section section--process">
+        <div class="container">
+          <div class="section__header animate-on-scroll">
+            <span class="section__tag">How We Work</span>
+            <h2 class="section__title">A Structured Delivery Process</h2>
+            <p class="section__subtitle">Every engagement begins with understanding — not proposing.</p>
+          </div>
+          <div class="process-steps">
+            <div class="process-step animate-on-scroll">
+              <div class="process-step__number">01</div>
+              <div class="process-step__line"></div>
+              <h3 class="process-step__title">Understand</h3>
+              <p class="process-step__desc">We map the current state, identify where friction actually lives, and determine the right solution approach.</p>
+            </div>
+            <div class="process-step animate-on-scroll">
+              <div class="process-step__number">02</div>
+              <div class="process-step__line"></div>
+              <h3 class="process-step__title">Design</h3>
+              <p class="process-step__desc">Architecture and solution design grounded in your real operational requirements and constraints.</p>
+            </div>
+            <div class="process-step animate-on-scroll">
+              <div class="process-step__number">03</div>
+              <div class="process-step__line"></div>
+              <h3 class="process-step__title">Prototype</h3>
+              <p class="process-step__desc">Incremental builds so you see results early and can course-correct as priorities evolve.</p>
+            </div>
+            <div class="process-step animate-on-scroll">
+              <div class="process-step__number">04</div>
+              <div class="process-step__line"></div>
+              <h3 class="process-step__title">Test & Iterate</h3>
+              <p class="process-step__desc">Rigorous testing under real conditions. You are part of the process throughout.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Why Clients Work With Us -->
+      <div class="section section--why" id="section-why">
+        <div class="container">
+          <div class="section__header animate-on-scroll">
+            <span class="section__tag">Why Clients Work With Us</span>
+            <h2 class="section__title">Built to <span class="text-gradient">Hold Up</span></h2>
+          </div>
+          <div class="why-grid">
+            <div class="why-card animate-on-scroll">
+              <div class="why-card__icon">⬡</div>
+              <h3 class="why-card__title">Problem-First Approach</h3>
+              <p class="why-card__desc">Our conversations start with your problem, not our product catalogue. We do not sell technology for its own sake.</p>
+            </div>
+            <div class="why-card animate-on-scroll">
+              <div class="why-card__icon">◈</div>
+              <h3 class="why-card__title">Work That Lasts</h3>
+              <p class="why-card__desc">Systems that can be maintained and extended by your own team — built to be owned, not depended on.</p>
+            </div>
+            <div class="why-card animate-on-scroll">
+              <div class="why-card__icon">◇</div>
+              <h3 class="why-card__title">Visible Results</h3>
+              <p class="why-card__desc">Results that are visible in your operations. Clear measures of success, grounded in real impact.</p>
+            </div>
+            <div class="why-card animate-on-scroll">
+              <div class="why-card__icon">△</div>
+              <h3 class="why-card__title">Stage-Adaptive</h3>
+              <p class="why-card__desc">From early-stage companies building first intelligent products to established organisations modernising legacy infrastructure.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="section section--cta">
+        <div class="container">
+          <div class="cta-block animate-on-scroll">
+            <h2 class="cta-block__title">Start a conversation. Tell us what you are trying to solve.</h2>
+            <p class="cta-block__desc">We will give you an honest view of what is possible.</p>
+            <a href="#contact" class="btn btn--primary btn--lg" data-navigate="contact">
+              <span>Get in Touch</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PAGE 2: ABOUT ==================== -->
+    <section id="page-about" class="page">
+      <div class="page-hero">
+        <div class="page-hero__bg">
+          <div class="hero__orb hero__orb--1"></div>
+          <div class="hero__orb hero__orb--2"></div>
+        </div>
+        <div class="container">
+          <span class="section__tag animate-on-scroll">About Anvaix</span>
+          <h1 class="page-hero__title animate-on-scroll">We Exist Because <span class="text-gradient">Good Technology</span> Is Hard to Find</h1>
+          <p class="page-hero__subtitle animate-on-scroll">We built this company because we were frustrated with the dynamic of selling first and building second. As engineers, as product people, and as clients ourselves — we know what happens when technology does not fit the problem.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-block animate-on-scroll">
+              <h2 class="about-block__title">The Problems We Solve</h2>
+              <p>The businesses we work with are not struggling because they lack ambition. They are struggling because their operations have not kept pace with their growth, or because the systems they rely on were built for a different era, or because they are sitting on data that could be driving better decisions but currently sits in silos no one knows how to connect.</p>
+              <p>Manual processes that consume skilled people. Software systems that were built reactively and are now difficult to maintain. Opportunities in AI and automation that the leadership team can see but the organisation does not have the internal capability to pursue.</p>
+            </div>
+            <div class="about-block animate-on-scroll">
+              <h2 class="about-block__title">How We Approach Clients</h2>
+              <p>We do not assume we know what you need before we understand your situation. Every engagement begins with a structured discovery process where we ask direct questions, listen carefully, and challenge our own assumptions before forming a point of view.</p>
+              <p>We will tell you if automation is not the right answer, or if the solution you are considering is more complex than the value it would deliver. This honesty is not a selling point — it is just how we work.</p>
+            </div>
+            <div class="about-values animate-on-scroll">
+              <div class="about-value">
+                <div class="about-value__icon">◆</div>
+                <h3>Direct & Transparent</h3>
+                <p>We communicate proactively when something is not going as planned. We document our work clearly.</p>
+              </div>
+              <div class="about-value">
+                <div class="about-value__icon">◆</div>
+                <h3>Small by Design</h3>
+                <p>The people you meet at the start of a project are the people who build it. Quality-consistent, communication-clear.</p>
+              </div>
+              <div class="about-value">
+                <div class="about-value__icon">◆</div>
+                <h3>Reliable Expertise</h3>
+                <p>Not the cheapest option, not the biggest firm — the most reliable one for work that requires genuine expertise.</p>
+              </div>
+              <div class="about-value">
+                <div class="about-value__icon">◆</div>
+                <h3>Long-Term Partners</h3>
+                <p>The end of a build is not the end of the relationship. We remain available for optimisation, scaling, and support.</p>
+              </div>
+            </div>
+            <div class="about-block animate-on-scroll">
+              <h2 class="about-block__title">Our Vision</h2>
+              <p>We believe that intelligent automation and AI are going to reshape how most organisations operate over the next decade. Our role is to help businesses navigate that shift in a way that is practical, sustainable, and grounded in real operational improvement — not in technology for the sake of it.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PAGE 3: SERVICES OVERVIEW ==================== -->
+    <section id="page-services" class="page">
+      <div class="page-hero">
+        <div class="page-hero__bg">
+          <div class="hero__orb hero__orb--1"></div>
+          <div class="hero__orb hero__orb--2"></div>
+        </div>
+        <div class="container">
+          <span class="section__tag animate-on-scroll">Our Services</span>
+          <h1 class="page-hero__title animate-on-scroll">A Focused Set of <span class="text-gradient">Technology Services</span></h1>
+          <p class="page-hero__subtitle animate-on-scroll">Making your operations more intelligent, more efficient, and more capable of scaling. Each service area represents deep expertise — not a broad catalogue of loosely related offerings.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="container">
+          <div class="services-detailed">
+            <div class="service-detailed animate-on-scroll" data-navigate="ai-solutions">
+              <div class="service-detailed__number">01</div>
+              <div class="service-detailed__content">
+                <h2 class="service-detailed__title">Artificial Intelligence Solutions</h2>
+                <p>We design and deploy AI systems that address specific business challenges — NLP, machine learning, predictive modelling, intelligent document handling, and decision-support. Every system is trained, tuned, and tested against your specific data environment.</p>
+                <span class="service-card__link">View AI Solutions →</span>
+              </div>
+            </div>
+            <div class="service-detailed animate-on-scroll" data-navigate="saas">
+              <div class="service-detailed__number">02</div>
+              <div class="service-detailed__content">
+                <h2 class="service-detailed__title">SaaS Development</h2>
+                <p>Software built with discipline that turns code into capability. Well-documented, well-tested, built for production realities. We work with businesses building new products and companies replacing aging internal systems.</p>
+                <span class="service-card__link">View SaaS Development →</span>
+              </div>
+            </div>
+            <div class="service-detailed animate-on-scroll" data-navigate="automation">
+              <div class="service-detailed__number">03</div>
+              <div class="service-detailed__content">
+                <h2 class="service-detailed__title">Automation & RPA</h2>
+                <p>Reduce processing time, eliminate error rates, and free skilled people. We build using RPA platforms and custom workflow systems, with process audit capability to identify genuine candidates for automation.</p>
+                <span class="service-card__link">View Automation →</span>
+              </div>
+            </div>
+            <div class="service-detailed animate-on-scroll">
+              <div class="service-detailed__number">04</div>
+              <div class="service-detailed__content">
+                <h2 class="service-detailed__title">Robotics Integration</h2>
+                <p>The software layer that makes robotic systems adaptable, communicative, and genuinely useful. We work alongside hardware partners and internal engineering teams to ensure reliable, integrated deployments.</p>
+              </div>
+            </div>
+            <div class="service-detailed animate-on-scroll" data-navigate="computer-vision">
+              <div class="service-detailed__number">05</div>
+              <div class="service-detailed__content">
+                <h2 class="service-detailed__title">Computer Vision</h2>
+                <p>Automated visual intelligence that scales. Quality assurance, object detection, safety monitoring, and intelligent extraction from image and document sources — tested rigorously under real operating conditions.</p>
+                <span class="service-card__link">View Computer Vision →</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PAGE 4: AI SOLUTIONS ==================== -->
+    <section id="page-ai-solutions" class="page">
+      <div class="page-hero">
+        <div class="page-hero__bg">
+          <div class="hero__orb hero__orb--1"></div>
+          <div class="hero__orb hero__orb--2"></div>
+        </div>
+        <div class="container">
+          <span class="section__tag animate-on-scroll">AI Solutions</span>
+          <h1 class="page-hero__title animate-on-scroll"><span class="text-gradient">Artificial Intelligence</span> That Solves Real Problems</h1>
+          <p class="page-hero__subtitle animate-on-scroll">AI is genuinely powerful when applied to a clearly understood problem. We build AI systems grounded in real operational challenges — and we are honest when a simpler solution would serve you better.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="container">
+          <div class="service-page">
+            <div class="service-page__block animate-on-scroll">
+              <h2>What We Build</h2>
+              <p>Our AI work covers the full spectrum from data analysis and predictive modelling through to deployed intelligent systems that operate inside your workflows. We design natural language processing systems that read, classify, and extract meaning from unstructured text. We build machine learning models that identify patterns in your operational data.</p>
+              <p>We develop intelligent document processing systems and AI-powered decision-support tools that improve the quality of human judgment — giving your team better information, faster, at the moment it is needed.</p>
+            </div>
+
+            <div class="service-page__applications animate-on-scroll">
+              <h2>Real-World Applications</h2>
+              <div class="application-grid">
+                <div class="application-card">
+                  <div class="application-card__industry">Financial Services</div>
+                  <p>Automated review and classification of loan applications, insurance claims, and compliance documentation — reducing processing time without compromising accuracy.</p>
+                </div>
+                <div class="application-card">
+                  <div class="application-card__industry">Retail & Supply Chain</div>
+                  <p>Predictive models built on transaction and inventory data anticipate demand shifts and reduce overstocking costs.</p>
+                </div>
+                <div class="application-card">
+                  <div class="application-card__industry">Healthcare & Professional</div>
+                  <p>Intelligent document extraction reduces manual handling of patient records, contracts, and regulatory submissions.</p>
+                </div>
+                <div class="application-card">
+                  <div class="application-card__industry">Operations</div>
+                  <p>Anomaly detection monitors equipment performance and surfaces early indicators of maintenance requirements before failures occur.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-page__block animate-on-scroll">
+              <h2>How This Helps Your Business</h2>
+              <p>Operational AI at its best does one of three things: it accelerates something currently slow, improves something currently inaccurate, or makes visible something currently hidden. We start by identifying which applies — and what the value of that improvement is in concrete terms.</p>
+              <p>We also help build internal capability to maintain and improve AI systems after deployment. A model that cannot be monitored, retrained, or updated becomes a liability over time.</p>
+            </div>
+
+            <div class="service-page__cta animate-on-scroll">
+              <p>→ Talk to us about a specific problem in your operations. We will give you an honest assessment of where AI can help and what it would realistically involve.</p>
+              <a href="#contact" class="btn btn--primary" data-navigate="contact">Discuss Your AI Needs</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PAGE 5: SAAS DEVELOPMENT ==================== -->
+    <section id="page-saas" class="page">
+      <div class="page-hero">
+        <div class="page-hero__bg">
+          <div class="hero__orb hero__orb--1"></div>
+          <div class="hero__orb hero__orb--2"></div>
+        </div>
+        <div class="container">
+          <span class="section__tag animate-on-scroll">SaaS Development</span>
+          <h1 class="page-hero__title animate-on-scroll">Software That <span class="text-gradient">Works Well</span></h1>
+          <p class="page-hero__subtitle animate-on-scroll">Software that works well is invisible — it does what it is supposed to do, reliably, day after day, without drama. We build software that works well.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="container">
+          <div class="service-page">
+            <div class="service-page__block animate-on-scroll">
+              <h2>What We Build</h2>
+              <p>SaaS platforms, internal business applications, APIs, and data pipelines. From greenfield product development to significant re-architecture of existing systems. We work across the full technology stack and select the right tools for specific requirements.</p>
+              <p>Every system we build is documented, tested, and structured so that your internal team can understand, maintain, and extend it without coming back to us. We build things to be owned, not depended on.</p>
+            </div>
+
+            <div class="service-page__applications animate-on-scroll">
+              <h2>Real-World Applications</h2>
+              <div class="application-grid">
+                <div class="application-card">
+                  <div class="application-card__industry">Legal Technology</div>
+                  <p>Platforms where the product itself is the business — engineering solid enough to support real customers at scale.</p>
+                </div>
+                <div class="application-card">
+                  <div class="application-card__industry">Property Management</div>
+                  <p>Internal operations platforms replacing spreadsheet-driven processes with unified systems built around actual team workflows.</p>
+                </div>
+                <div class="application-card">
+                  <div class="application-card__industry">Digital Health</div>
+                  <p>Complex API layers and data integration connecting legacy infrastructure with modern cloud services.</p>
+                </div>
+                <div class="application-card">
+                  <div class="application-card__industry">Professional Services</div>
+                  <p>Custom platforms that automate client management, reporting, and collaboration workflows.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-page__block animate-on-scroll">
+              <h2>How This Helps Your Business</h2>
+              <p>Good software is competitive infrastructure. When internal tools work properly, your team moves faster and makes fewer errors. When your data flows cleanly through well-built pipelines, business intelligence is actually trustworthy.</p>
+              <p>Poor software creates drag at every level. The cost shows up in lost time, frustrated teams, missed opportunities, and the compounding cost of technical debt.</p>
+            </div>
+
+            <div class="service-page__cta animate-on-scroll">
+              <p>→ If you are building a new platform or reaching the limits of an existing system, let us understand what you need.</p>
+              <a href="#contact" class="btn btn--primary" data-navigate="contact">Start Your Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PAGE 6: AUTOMATION & RPA ==================== -->
+    <section id="page-automation" class="page">
+      <div class="page-hero">
+        <div class="page-hero__bg">
+          <div class="hero__orb hero__orb--1"></div>
+          <div class="hero__orb hero__orb--2"></div>
+        </div>
+        <div class="container">
+          <span class="section__tag animate-on-scroll">Automation & RPA</span>
+          <h1 class="page-hero__title animate-on-scroll"><span class="text-gradient">Automation</span> That Redirects Human Time</h1>
+          <p class="page-hero__subtitle animate-on-scroll">Every hour a skilled person spends on a repetitive, rules-based task is an hour they are not spending on the work that actually requires their capabilities.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="container">
+          <div class="service-page">
+            <div class="service-page__block animate-on-scroll">
+              <h2>What We Build</h2>
+              <p>We design and implement automation solutions using RPA platforms, custom-built workflow engines, API integrations, and intelligent document processing. The right tool depends on the specific workflow — its complexity, volume, error tolerance, and the systems it touches.</p>
+              <div class="capability-list">
+                <div class="capability-item">Invoice & PO Processing</div>
+                <div class="capability-item">Data Entry & Validation</div>
+                <div class="capability-item">Document Routing</div>
+                <div class="capability-item">Report Generation</div>
+                <div class="capability-item">Compliance & Audit Trails</div>
+                <div class="capability-item">HR Onboarding</div>
+                <div class="capability-item">Customer Communications</div>
+                <div class="capability-item">Data Synchronisation</div>
+              </div>
+            </div>
+
+            <div class="service-page__applications animate-on-scroll">
+              <h2>Real-World Applications</h2>
+              <div class="application-grid">
+                <div class="application-card">
+                  <div class="application-card__industry">Financial Services</div>
+                  <p>Automated accounts payable — matching invoices against purchase orders, routing exceptions, posting entries. Only genuine exceptions need human involvement.</p>
+                </div>
+                <div class="application-card">
+                  <div class="application-card__industry">Operations & Supply Chain</div>
+                  <p>Systems monitoring incoming orders across channels, triggering fulfilment, updating inventory, generating shipping documentation automatically.</p>
+                </div>
+                <div class="application-card">
+                  <div class="application-card__industry">HR & People Operations</div>
+                  <p>Onboarding workflows previously requiring coordination across five separate systems, reduced to minutes of exception management.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-page__block animate-on-scroll">
+              <h2>How This Helps Your Business</h2>
+              <p>The business case is straightforward: calculate the hours spent, apply a realistic reduction figure, and compare costs. For most high-volume, repetitive workflows, the return is clear and the payback period is short.</p>
+              <p>Beyond cost saving, automation reduces error rates, improves processing speed, and creates audit trails that manual processes rarely provide. In regulated industries, this alone often justifies the investment.</p>
+            </div>
+
+            <div class="service-page__cta animate-on-scroll">
+              <p>→ Tell us about a workflow consuming your team's time. We can assess it quickly and give you an honest view.</p>
+              <a href="#contact" class="btn btn--primary" data-navigate="contact">Discuss Automation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PAGE 7: COMPUTER VISION ==================== -->
+    <section id="page-computer-vision" class="page">
+      <div class="page-hero">
+        <div class="page-hero__bg">
+          <div class="hero__orb hero__orb--1"></div>
+          <div class="hero__orb hero__orb--2"></div>
+        </div>
+        <div class="container">
+          <span class="section__tag animate-on-scroll">Computer Vision</span>
+          <h1 class="page-hero__title animate-on-scroll"><span class="text-gradient">Visual Intelligence</span> at Scale</h1>
+          <p class="page-hero__subtitle animate-on-scroll">There are things happening in your operations right now that no one is seeing. Computer vision gives your systems the ability to observe, interpret, and act on visual information at a scale and consistency that human inspection cannot match.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="container">
+          <div class="service-page">
+            <div class="service-page__block animate-on-scroll">
+              <h2>What We Build</h2>
+              <p>Computer vision systems for quality inspection, object detection and tracking, safety monitoring, document and image analysis, and real-time visual intelligence at the edge. The full pipeline — from camera selection through model training, integration with control systems, and actionable dashboards.</p>
+              <p>We train vision models on your specific environment and product types, because generic models trained on open datasets will not perform reliably against the real variability of your production conditions.</p>
+            </div>
+
+            <!-- Interactive Vision Module -->
+            <div class="vision-module animate-on-scroll">
+              <h2>Intelligence Modules</h2>
+              <div class="vision-module__grid">
+                <div class="vision-module__card" data-module="detection">
+                  <div class="vision-module__visual">
+                    <div class="vision-scan-line"></div>
+                    <div class="vision-detection-box"></div>
+                    <div class="vision-detection-box vision-detection-box--2"></div>
+                  </div>
+                  <h3>Object Detection</h3>
+                  <p>Real-time identification, counting, and tracking at production speed.</p>
+                </div>
+                <div class="vision-module__card" data-module="quality">
+                  <div class="vision-module__visual">
+                    <div class="vision-grid-overlay"></div>
+                    <div class="vision-defect-marker"></div>
+                    <div class="vision-defect-marker vision-defect-marker--2"></div>
+                  </div>
+                  <h3>Quality Inspection</h3>
+                  <p>Surface defects, dimensional accuracy, label placement, assembly completeness.</p>
+                </div>
+                <div class="vision-module__card" data-module="safety">
+                  <div class="vision-module__visual">
+                    <div class="vision-zone"></div>
+                    <div class="vision-alert-pulse"></div>
+                  </div>
+                  <h3>Safety Monitoring</h3>
+                  <p>PPE compliance, restricted zone detection, near-miss event surfacing.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-page__applications animate-on-scroll">
+              <h2>Real-World Applications</h2>
+              <div class="application-grid">
+                <div class="application-card">
+                  <div class="application-card__industry">Manufacturing</div>
+                  <p>Inspect products for defects, accuracy, and assembly completeness — at line speed, without slowing throughput.</p>
+                </div>
+                <div class="application-card">
+                  <div class="application-card__industry">Logistics & Warehousing</div>
+                  <p>Identify, count, track items, confirm shipments, and flag discrepancies before they leave the building.</p>
+                </div>
+                <div class="application-card">
+                  <div class="application-card__industry">Safety-Critical Environments</div>
+                  <p>Monitor PPE compliance, detect unauthorised entry, surface near-miss events that otherwise go unrecorded.</p>
+                </div>
+                <div class="application-card">
+                  <div class="application-card__industry">Document Operations</div>
+                  <p>Vision and OCR systems extract structured data from forms, invoices, and mixed-format records at volumes manual entry cannot achieve.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-page__block animate-on-scroll">
+              <h2>How This Helps Your Business</h2>
+              <p>The value of computer vision is in two places: the problems it prevents and the capacity it creates. Defects caught before customers, safety incidents flagged before injuries, shipment errors identified before they leave.</p>
+              <p>We will tell you honestly if the problem you are describing is not one that current vision technology can solve reliably.</p>
+            </div>
+
+            <div class="service-page__cta animate-on-scroll">
+              <p>→ If visual inspection, tracking, or image-based data extraction is meaningful in your operations, reach out.</p>
+              <a href="#contact" class="btn btn--primary" data-navigate="contact">Assess the Opportunity</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PAGE 8: CONTACT ==================== -->
+    <section id="page-contact" class="page">
+      <div class="page-hero page-hero--compact">
+        <div class="page-hero__bg">
+          <div class="hero__orb hero__orb--1"></div>
+          <div class="hero__orb hero__orb--2"></div>
+        </div>
+        <div class="container">
+          <span class="section__tag animate-on-scroll">Contact</span>
+          <h1 class="page-hero__title animate-on-scroll">Let's <span class="text-gradient">Talk</span></h1>
+          <p class="page-hero__subtitle animate-on-scroll">We work with a focused group of clients at any one time. If you are dealing with a real problem and looking for people who will engage with it seriously, we are glad to hear from you.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="container">
+          <div class="contact-layout">
+            <div class="contact-info animate-on-scroll">
+              <div class="contact-info__block">
+                <h2>What to Expect</h2>
+                <p>When you reach out, you will speak with someone who understands the work — not a sales team. The conversation usually takes thirty to forty-five minutes and gives both sides enough to decide whether there is a basis for working together.</p>
+              </div>
+              <div class="contact-info__block">
+                <h2>What to Bring</h2>
+                <p>No fully defined brief needed. Come with your best description of what is not working, what you have tried, and what success would look like. That is enough to start a useful conversation.</p>
+              </div>
+              <div class="contact-info__block contact-info__block--highlight">
+                <div class="contact-response">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  <div>
+                    <h3>Response Time</h3>
+                    <p>Within <strong>one business day</strong>. If your situation is time-sensitive, please say so.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-details">
+                <a href="mailto:hello@anvaix.com" class="contact-detail">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  <span>hello@anvaix.com</span>
+                </a>
+                <a href="#" class="contact-detail">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                  <span>LinkedIn</span>
+                </a>
+              </div>
+            </div>
+            <div class="contact-form-wrapper animate-on-scroll">
+              <form id="contact-form" class="contact-form" novalidate>
+                <div class="form-group">
+                  <label for="contact-name">Your Name</label>
+                  <input type="text" id="contact-name" name="name" required autocomplete="name" placeholder="Full name" />
+                </div>
+                <div class="form-group">
+                  <label for="contact-email">Email Address</label>
+                  <input type="email" id="contact-email" name="email" required autocomplete="email" placeholder="you@company.com" />
+                </div>
+                <div class="form-group">
+                  <label for="contact-company">Company</label>
+                  <input type="text" id="contact-company" name="company" autocomplete="organization" placeholder="Company name" />
+                </div>
+                <div class="form-group">
+                  <label for="contact-service">Area of Interest</label>
+                  <select id="contact-service" name="service">
+                    <option value="">Select a service area</option>
+                    <option value="ai">AI Solutions</option>
+                    <option value="saas">SaaS Development</option>
+                    <option value="automation">Automation & RPA</option>
+                    <option value="robotics">Robotics Integration</option>
+                    <option value="vision">Computer Vision</option>
+                    <option value="other">Not sure yet</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="contact-message">Describe Your Challenge</label>
+                  <textarea id="contact-message" name="message" rows="5" required placeholder="What is happening now, what the impact is, and what a better outcome would look like."></textarea>
+                </div>
+                <div class="form-group form-group--checkbox">
+                  <label>
+                    <input type="checkbox" id="contact-urgent" name="urgent" />
+                    <span>This is time-sensitive</span>
+                  </label>
+                </div>
+                <button type="submit" class="btn btn--primary btn--full" id="contact-submit">
+                  <span>Send Your Inquiry</span>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                </button>
+                <p class="form-note">Your data is encrypted and handled with care. We never share client information with third parties.</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="nav__logo">
+            <span class="nav__logo-icon">◆</span>
+            <span class="nav__logo-text">ANVAIX</span>
+          </div>
+          <p>Intelligent infrastructure for business. Engineering rigour meets practical business thinking.</p>
+        </div>
+        <div class="footer__links">
+          <h4>Services</h4>
+          <a href="#ai-solutions" data-navigate="ai-solutions">AI Solutions</a>
+          <a href="#saas" data-navigate="saas">SaaS Development</a>
+          <a href="#automation" data-navigate="automation">Automation & RPA</a>
+          <a href="#computer-vision" data-navigate="computer-vision">Computer Vision</a>
+        </div>
+        <div class="footer__links">
+          <h4>Company</h4>
+          <a href="#about" data-navigate="about">About Us</a>
+          <a href="#services" data-navigate="services">All Services</a>
+          <a href="#contact" data-navigate="contact">Contact</a>
+        </div>
+        <div class="footer__links">
+          <h4>Connect</h4>
+          <a href="mailto:hello@anvaix.com">hello@anvaix.com</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Anvaix. All rights reserved.</p>
+        <p>Built with engineering rigour.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
